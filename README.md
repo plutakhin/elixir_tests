@@ -5,14 +5,20 @@
 ## Installation
 
 ```bash
-> mix deps.get
-> mix test
+mix deps.get
+mix test
 ```
 ## Run specific test
 
 ```bash
-> mix deps.get
-> mix test test/basic
+mix deps.get
+mix test test/basic
 ...
-> mix test test/basic/roman_to_int_test.exs
+mix test test/basic/roman_to_int_test.exs
 ```
+
+## Usage
+
+Задания структурированы в виде модулей в папке lib/* по уровням. Каждое задание представлено в виде отдельного модуля с описанием его назначения. 
+В теле модуля присутствует метод или структура которую следует реализовать, помеченный комментарием TODO. Для проверки задания используются unit-тесты.
+Тесты можно запускать как для конкретного модуля, так и для всех заданий в директории сразу.
